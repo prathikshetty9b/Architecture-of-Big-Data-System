@@ -6,7 +6,7 @@
 
 ### Command 1 - `ls`
 
-`**ls**`: This command is used to list all the files. Use lsr for recursive approach. It is useful when we want a hierarchy of a folder.
+`ls`: This command is used to list all the files. Use lsr for recursive approach. It is useful when we want a hierarchy of a folder.
 
 **List Root Directory**
 
