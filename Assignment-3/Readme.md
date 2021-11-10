@@ -39,15 +39,15 @@ Time taken: 0.427 seconds
 
 ```sql
 hive>  CREATE TABLE assignment_db.customers(
-		>  customer_id int,
-		>  customer_fname varchar(45),
-		>  customer_lname varchar(45),
-		>  customer_email varchar(45),
-		>  customer_password varchar(45),
-		>  customer_street varchar(255),
-		>  customer_city varchar(45),
-		>  customer_state varchar(45),
-		>  customer_zipcode varchar(45)) row format delimited fields terminated by ',' stored as textfile;
+    >  customer_id int,
+    >  customer_fname varchar(45),
+    >  customer_lname varchar(45),
+    >  customer_email varchar(45),
+    >  customer_password varchar(45),
+    >  customer_street varchar(255),
+    >  customer_city varchar(45),
+    >  customer_state varchar(45),
+    >  customer_zipcode varchar(45)) row format delimited fields terminated by ',' stored as textfile;
 ```
 
 ```
@@ -117,7 +117,7 @@ hive> SELECT customer_fname, COUNT(*)
 ```sql
 --Total Unique fnames
 hive> SELECT COUNT(DISTINCT customer_fname) 
-		>	FROM assignment_db.customers;
+    > FROM assignment_db.customers;
 ```
 
 **d) List and count number of unique `cities`.**
@@ -132,5 +132,5 @@ hive> SELECT customer_city, COUNT(*)
 ```sql
 --Total Unique Cities
 hive> SELECT COUNT(DISTINCT customer_city) 
-		>	FROM assignment_db.customers;
+    > FROM assignment_db.customers;
 ```
